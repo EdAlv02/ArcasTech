@@ -57,7 +57,7 @@
             </section>
               
             <section id="secHeight">
-                <div class="text-center p2">Bloque 2</div>
+                <div id="Bloque2" class="text-center p2">Bloque 2</div>
             </section>
 
             <!-- Service Section -->
@@ -91,9 +91,10 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
         <script type="text/javascript">
-
-            
-            
+            window.addEventListener("scroll", function(){
+              var header = document.querySelector("header");
+              header.classList.toggle("sticky", window.scrollY> 600);
+            })
         </script>
 
         <!-- Script Initialize AOS -->

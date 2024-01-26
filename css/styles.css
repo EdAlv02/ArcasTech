@@ -55,7 +55,11 @@ nav {
 .navbar-collapse a{
     text-decoration: none;
     padding-inline: 2rem;
-    color: white;
+    color: black;
+}
+
+header.sticky a{
+    color: white; /* Cambia esto al color que prefieras */
 }
 
 .navbar-collapse {
