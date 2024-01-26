@@ -24,6 +24,19 @@ section {
     color: white;
 }
 
+.p3 {
+    background-color: rgb(151, 151, 151);
+    height: 100%;
+    padding: 80px;
+    color: white;
+}
+
+.p4 {
+    height: 100%;
+    padding: 80px;
+    color: white;
+    background-color: rgb(112, 112, 112);
+}
 nav {
     background-color: transparent;
     color: white;
