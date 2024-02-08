@@ -20,12 +20,12 @@ section {
 }
 
 .container-fluid {
-    padding-inline: 5rem;
+    padding-inline: 60px;
 }
 
 .navbar-collapse a {
     text-decoration: none;
-    padding-inline: 2rem;
+    padding-inline: 1.2rem;
     color: rgb(255, 255, 255);
 }
 
@@ -45,9 +45,9 @@ section {
     color: rgb(255, 255, 255);
 }
 
-/* .navbar.dark-bg {
+.navbar.dark-bg {
     background-color: black;
-} */
+}
 
 .navbar.dark-bg .navbar-text {
     color: white;
@@ -57,8 +57,8 @@ nav {
     transition: background-color 0.3s ease-in-out;
     color: rgb(255, 255, 255);
     background-color: rgba(6, 4, 24, 0.801);
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
     box-shadow: 2px 2px 3px 1px rgb(43, 42, 42);
 }
 
@@ -73,7 +73,7 @@ nav {
 .p1 {
     background-color: rgb(194, 194, 194);
     height: 100%;
-    padding: 80px;
+    padding: 110px;
 }
 
 .p2 {
