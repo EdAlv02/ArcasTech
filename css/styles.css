@@ -101,3 +101,10 @@ header.sticky a {
     color: white;
     /* Cambia esto al color que prefieras */
 }
+
+.button-up {
+    color: #ffffff;
+    /* padding-left:7%; */
+    align-items: center;
+    padding-left: 5%;
+}
