@@ -17,9 +17,10 @@ section {
     padding-top: 90px;
     text-align: center;
     padding-bottom: 50px;
-    background: rgb(34,36,39);
-    background: linear-gradient(166deg, rgba(34,36,39,1) 48%, rgba(5,9,14,1) 100%);
-   
+    background: rgb(34, 36, 39);
+    background: linear-gradient(166deg,
+            rgba(34, 36, 39, 1) 48%,
+            rgba(5, 9, 14, 1) 100%);
 }
 
 .headBanner h1 {
@@ -49,28 +50,7 @@ section {
 
 .navbar-collapse a {
     text-decoration: none;
-    padding-inline: 1.2rem;
     color: rgb(255, 255, 255);
-}
-
-.navbar-collapse {
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.navbar.white-bg {
-    background-color: white;
-}
-
-.navbar.white-bg .navbar-text {
-    color: rgb(255, 255, 255);
-}
-
-.navbar.dark-bg {
-    background-color: black;
 }
 
 .navbar.dark-bg .navbar-text {
@@ -86,12 +66,15 @@ nav {
     box-shadow: 2px 2px 3px 1px rgb(41, 41, 41);
 }
 
-  
-  .navbar.scrolled {
+.navbar-toggler {
+    border: none;
+}
+
+.navbar.scrolled {
     background-color: rgba(206, 206, 206, 0);
     box-shadow: none;
-  }
-  
+}
+
 /* End navbar */
 
 .p1 {
