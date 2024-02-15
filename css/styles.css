@@ -1,6 +1,6 @@
 * {
     padding: 0;
-    margin: 0;
+    margin: 0;  
     /* overflow: hidden; */
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
@@ -45,12 +45,31 @@ section {
 }
 
 .container-fluid {
-    padding-inline: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .navbar-collapse a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    transition: 0.3s ease-in;
+}
+
+.navbar-collapse a:hover  {
+    border-bottom: 2px solid #EDDC5A;
+    transition: 0.3s ease-in-out ;
+    background-color: #393939;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.navbar-collapse a[aria-current="page"]  {
+    border-bottom: 2px solid #EDDC5A;
+    padding-bottom: 2px;
+    
+}
+.navbar-collapse {
+    width: auto;
 }
 
 .navbar.dark-bg .navbar-text {
@@ -74,6 +93,8 @@ nav {
     background-color: rgba(206, 206, 206, 0);
     box-shadow: none;
 }
+
+
 
 /* End navbar */
 
