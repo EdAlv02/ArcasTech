@@ -68,6 +68,7 @@ section {
     padding-bottom: 2px;
     
 }
+
 .navbar-collapse {
     width: auto;
 }
@@ -135,4 +136,8 @@ header.sticky a {
     /* padding-left:7%; */
     align-items: center;
     padding-left: 5%;
+}
+
+footer {
+    background-color: #000000;
 }

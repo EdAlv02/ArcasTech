@@ -8,17 +8,15 @@
     <main>
 
       <!-- Aqui va el codigo segun la pagina -->
-      <h1 class="p-5">INICIO </h1>
+      <h1 class="p-5">NOSOTROS </h1>
       <div class="py-5"></div>
       <div class="py-5"></div>
       <div class="py-5"></div>
       <div class="py-5"></div>
-      
     </main>
     
     <footer id="footer"></footer>
     
-    <script src="./js/function.js"></script>
     <script src="./js/template.js"></script>
     
     <!-- Bootstrap JavaScript Libraries -->
@@ -30,16 +28,25 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
     
-    <script>
-      const navbar = document.querySelector('.navbar');
-      
-      window.addEventListener('scroll', () => {
-          if (window.scrollY > 0) {
-              navbar.classList.add('scrolled');
-          } else {
-              navbar.classList.remove('scrolled');
-          }
-      });
+    
+    
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 900);
+        })
+        </script>
+
+<script>
+    const navbar = document.querySelector('.navbar');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
     </script>
 
   </body>
