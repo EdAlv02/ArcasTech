@@ -36,6 +36,40 @@ section {
     padding-top: 30px;
 }
 
+/*Main nosotros*/
+
+.text-primary {
+    color: #EDDC5A !important;
+}
+
+.text-secondary {
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+    color: #F5F5F5 !important;
+}
+
+.about-item {
+    background: #2c2929;
+    transition: .5s;
+    padding: 10px;
+    margin: 10px;
+    height: 280px
+}
+
+.about-item:hover {
+    margin-top: -10px;
+    background: #15161a;
+}
+
+.about-item * {
+    transition: .5s;
+} 
+
+.about-item:hover * {
+    color: var(--light) !important;
+}
+
 /* navbar */
 
 .navbar-item {
