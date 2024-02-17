@@ -6,10 +6,7 @@
         "Lucida Sans", Arial, sans-serif;
 }
 
-section {
-    width: 100%;
-    height: 100vh;
-}
+
 
 /* Header */
 
@@ -175,3 +172,78 @@ header.sticky a {
 footer {
     background-color: #000000;
 }
+
+/* INICIO */
+.sec1 {
+    background-color: #000000;
+}
+
+.abUs h1 {
+    padding: 50px 10px 10px 10px;
+    text-align: center;
+}
+
+.abUsHr {
+    width: 50%;
+    margin: auto;
+    border-width: 10px;
+    border-radius: 5px;
+    color: #F5F5F5;
+}
+
+.auFirstP {
+    text-align: justify;
+    color: #E0E0E0;
+    padding-top: 20px;
+    margin: 50px;
+    padding-bottom: 50px;
+}
+
+.auFirstP h3 {
+    text-align: center;
+}
+
+.auFirstP p {
+    font-size: large;
+    text-align: center;
+}
+
+.auFirstP img {
+    margin: 50px;
+}
+
+.auFirstP a {
+    color: #EDDC5A;
+    display: flex;
+    text-decoration: none;
+    transition: 0.3s ease-in ;
+    display: flex;
+    justify-content: center;
+}
+
+.auFirstP a:hover {
+    color: E0E0E0;
+    text-decoration:underline;
+    font-size: larger;
+    transition: 0.3s ease-in-out ;
+}
+
+.serSec h5 {
+   color: #EDDC5A;
+}
+
+.serSec .about-item {
+    background-color: #4d4d4d;
+    color: #E0E0E0;
+}
+
+.serSec .about-item:hover {
+    background-color: #000000;
+}
+
+.serSec h3 {
+    color: #F5F5F5;
+    text-align: center;
+}
+/* FIN INICIO */
+
