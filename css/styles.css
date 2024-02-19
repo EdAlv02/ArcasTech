@@ -79,9 +79,9 @@ nav {
     transition: background-color 0.3s ease-in-out;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.897);
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 2px;
-    box-shadow: 2px 2px 3px 1px rgb(41, 41, 41);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 2px 2px 3px 1px rgb(15, 15, 15);
 }
 
 .navbar-toggler {
@@ -121,6 +121,7 @@ nav {
     margin: 10px;
     height: 280px
 }
+
 
 .about-item:hover {
     margin-top: -10px;
@@ -187,11 +188,6 @@ nav {
     padding: 80px;
     color: white;
     background-color: rgb(112, 112, 112);
-}
-
-header.sticky a {
-    color: white;
-    /* Cambia esto al color que prefieras */
 }
 
 .button-up {
@@ -286,6 +282,27 @@ footer {
 .serSec h3 {
     color: #F5F5F5;
     text-align: center;
+}
+
+#aiInicio {
+    background-color: #191717;
+    height: 200px;
+    padding: 20px;
+}
+
+.ServLink {
+    color: #EDDC5A;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    transition: 0.3s ease-in;
+}
+
+.ServLink:hover {
+    transition: ease-in-out 0.3s ;
+    text-decoration: underline;
+    color: #000000;
 }
 /* FIN INICIO */
 
