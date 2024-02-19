@@ -166,7 +166,7 @@ header.sticky a {
     color: #ffffff;
     /* padding-left:7%; */
     align-items: center;
-    padding-left: 5%;
+    padding-left: 15px; 
 }
 
 footer {
