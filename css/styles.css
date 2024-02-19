@@ -286,8 +286,12 @@ footer {
 
 #aiInicio {
     background-color: #191717;
-    height: 200px;
-    padding: 20px;
+    height: 250px;
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .ServLink {
