@@ -93,12 +93,11 @@ nav {
     box-shadow: none;
 }
 
-.navbar-nav a.active {
+
+.inicio-style {
     border-bottom: 1px solid #EDDC5A;
     border-radius: 3px;
 }
-
-
 /* End navbar */
 
 /*Main nosotros inicio*/
