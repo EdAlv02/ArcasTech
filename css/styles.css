@@ -2,37 +2,35 @@
     padding: 0;
     margin: 0;  
     /* overflow: hidden; */
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-
-
 
 /* Header */
 
-.headBanner {
+.bannerIndex {
     padding-top: 90px;
-    text-align: center;
     padding-bottom: 50px;
-    background: rgb(34, 36, 39);
-    background: linear-gradient(166deg,
-            rgba(34, 36, 39, 1) 48%,
-            rgba(5, 9, 14, 1) 100%);
+    background-image: url("../resources/bannerIndex.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.headBanner h1 {
-    padding-top: 20px;
-    color: rgb(228, 228, 228);
+.centerimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.headBanner h3 {
-    color: rgb(139, 139, 139);
-}
+.bannerIndex h1 {
+    font-size: 15vw;
+    text-align: center;
+} 
 
-.textB {
-    padding-top: 30px;
-}
-
+.bannerIndex h2 {
+    font-size: 3vw;
+    text-align: center;
+} 
 
 /* navbar */
 
@@ -78,10 +76,11 @@
 nav {
     transition: background-color 0.3s ease-in-out;
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.897);
+    background-color: rgba(0, 0, 0, 0);
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
     box-shadow: 2px 2px 3px 1px rgb(15, 15, 15);
+
 }
 
 .navbar-toggler {
