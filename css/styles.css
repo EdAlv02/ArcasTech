@@ -8,18 +8,34 @@
 /* Header */
 
 .bannerIndex {
-    padding-top: 90px;
-    padding-bottom: 50px;
     background-image: url("../resources/bannerIndex.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: all .25s ease-in;
 }
+
+.arrow-container {
+    position: fixed;
+    bottom: 15px; /* Establece el padding-bottom a 15 píxeles */
+    right: 5%;
+    transform: translateX(-50%);
+  }
 
 .centerimg {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.centerimg img {
+    width: 550px;
+    transition: all .2s ease-in;
 }
 
 .bannerIndex h1 {
@@ -77,26 +93,23 @@ nav {
     transition: background-color 0.3s ease-in-out;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0);
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    box-shadow: 2px 2px 3px 1px rgb(15, 15, 15);
-
+    box-shadow: none;
 }
 
 .navbar-toggler {
     border: none;
 }
 
-.navbar.scrolled {
-    background-color: rgba(206, 206, 206, 0);
-    box-shadow: none;
+.scrolled {
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: 0px 1px 3px 1px rgb(44, 44, 44);
 }
 
 
-.inicio-style {
+/* .inicio-style {
     border-bottom: 1px solid #EDDC5A;
     border-radius: 3px;
-}
+} */
 /* End navbar */
 
 /*Main nosotros inicio*/
@@ -309,3 +322,14 @@ footer {
 }
 /* FIN INICIO */
 
+@media (max-width: 555px) {
+    .centerimg img {
+        width: 250px;
+        padding-bottom: 10px;
+        transition: ease-in-out .2s all;
+    }
+
+    .bannerIndex {
+        transition: all .25s ease-in-out ;
+    }
+}
