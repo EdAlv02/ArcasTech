@@ -382,3 +382,13 @@ footer {
         transition: all .25s ease-in-out ;
     }
 }
+
+.arrow-container:hover {
+    background-color: #EDDC5A;
+    color: black;
+    transition: all ease-in-out .2s;
+}
+
+.arrow-container {
+    transition: all ease-in .2s;
+}
