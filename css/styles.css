@@ -142,17 +142,17 @@ nav {
 /* Estilo por defecto del navbar */
 .navbar {
     background-color: transparent; /* Color de fondo inicial */
-    transition: background-color 0.3s ease; /* Transición suave */
+    transition: background-color 0.5s ease; /* Transición suave */
   }
   
   /* Estilo del navbar al hacer scroll */
   .navbar.scrolled {
     background-color: #000000;
     border-bottom: 2px solid #f5f5f57c;
-    transition: background-color 0.3s ease-in-out
+    transition: background-color 0.5s ease-in-out
   }
 
-.navActive {
+.active {
     border-bottom: 1px solid #EDDC5A;
     border-radius: 3px;
 }

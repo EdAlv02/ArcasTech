@@ -32,3 +32,22 @@ window.addEventListener('scroll', function() {
   }
 }); 
 
+const pathname = window.location.pathname;
+
+switch (pathname) {
+  case "/index.html":
+    document.getElementById("inicio").classList.add("active");
+    break;
+  case "/nosotros.html":
+    document.getElementById("nosotros").classList.add("active");
+    break;
+  case "/servicios.html":
+    document.getElementById("servicios").classList.add("active");
+    break;
+  case "/portafolio.html":
+    document.getElementById("portafolio").classList.add("active");
+    break;
+  case "/contacto.html":
+    document.getElementById("contacto").classList.add("active");
+    break;
+}
