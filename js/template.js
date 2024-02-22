@@ -8,12 +8,6 @@ window.onload = function () {
   });
 };
 
-function pageName() {
-  const url = window.location.pathname;
-  const part = url.split("/");
-  console.log(part);
-
-}
 //Funcion navbar cambio de color
 window.addEventListener('scroll', function() {
   var header = document.querySelector('header');
@@ -37,3 +31,4 @@ window.addEventListener('scroll', function() {
     backtop.classList.add('invisible');
   }
 }); 
+

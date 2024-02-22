@@ -139,10 +139,6 @@ nav {
     border: none;
 }
 
-.scrolled {
-
-}
-
 /* Estilo por defecto del navbar */
 .navbar {
     background-color: transparent; /* Color de fondo inicial */
@@ -152,13 +148,15 @@ nav {
   /* Estilo del navbar al hacer scroll */
   .navbar.scrolled {
     background-color: #000000;
-    box-shadow: 0px 1px 3px 1px rgb(44, 44, 44);
+    border-bottom: 2px solid #f5f5f57c;
+    transition: background-color 0.3s ease-in-out
   }
 
-/* .inicio-style {
+.navActive {
     border-bottom: 1px solid #EDDC5A;
     border-radius: 3px;
-} */
+}
+
 /* End navbar */
 
 /*Main nosotros inicio*/
@@ -223,33 +221,6 @@ nav {
 }
 /*Contacto finish*/
 
-.p1 {
-    background-color: rgb(194, 194, 194);
-    height: 100%;
-    padding: 80px;
-}
-
-.p2 {
-    background-color: rgb(125, 125, 125);
-    height: 100%;
-    padding: 80px;
-    color: white;
-}
-
-.p3 {
-    background-color: rgb(151, 151, 151);
-    height: 100%;
-    padding: 80px;
-    color: white;
-}
-
-.p4 {
-    height: 100%;
-    padding: 80px;
-    color: white;
-    background-color: rgb(112, 112, 112);
-}
-
 .button-up {
     color: #ffffff;
     /* padding-left:7%; */
@@ -257,119 +228,11 @@ nav {
     padding-left: 15px; 
 }
 
-footer {
-    background-color: #000000;
-}
 
-/* INICIO */
-.sec1 {
-    background-color: #000000;
-}
+/* Inicio */
 
-.abUs h1 {
-    padding: 50px 10px 10px 10px;
-    text-align: center;
-}
-
-.abUsHr {
-    width: 50%;
-    margin: auto;
-    border-width: 10px;
-    border-radius: 5px;
-    color: #F5F5F5;
-}
-
-.auFirstP {
-    text-align: justify;
-    color: #E0E0E0;
-    padding-top: 20px;
-    margin: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 50px;
-}
-
-.auFirstP h3 {
-    text-align: center;
-}
-
-.auFirstP p {
-    font-size: large;
-    text-align: center;
-    padding: 50px;
-    text-align: justify;
-}
-
-.inImg {
-    display: flex;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .centered-image {
-    max-width: 80%;
-    height: auto;
-  }
-
-.auFirstP a {
-    color: #EDDC5A;
-    display: flex;
-    text-decoration: none;
-    transition: 0.3s ease-in ;
-    display: flex;
-    justify-content: center;
-}
-
-.auFirstP a:hover {
-    color: E0E0E0;
-    text-decoration:underline;
-    font-size: larger;
-    transition: 0.3s ease-in-out ;
-}
-
-.serSec h5 {
-   color: #EDDC5A;
-}
-
-.serSec .about-item {
-    background-color: #141414;
-    color: #E0E0E0;
-}
-
-.serSec .about-item:hover {
-    background-color: #000000;
-}
-
-.serSec h3 {
-    color: #F5F5F5;
-    text-align: center;
-}
-
-#aiInicio {
-    background-color: #191717;
-    height: 250px;
-    padding: 50px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.ServLink {
-    color: #EDDC5A;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-    transition: 0.3s ease-in;
-}
-
-.ServLink:hover {
-    transition: ease-in-out 0.3s ;
-    text-decoration: underline;
-    color: #000000;
-}
 /* FIN INICIO */
+
 
 @media (max-width: 555px) {
     .centerimg img {
@@ -383,10 +246,18 @@ footer {
     }
 }
 
+/* Footer */
+
+footer {
+    background-color: #000000;
+}
+
+
 .arrow-container:hover {
     background-color: #EDDC5A;
     color: black;
     transition: all ease-in-out .2s;
+    border-color: #000000;
 }
 
 .arrow-container {
