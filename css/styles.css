@@ -148,14 +148,9 @@ nav {
   /* Estilo del navbar al hacer scroll */
   .navbar.scrolled {
     background-color: #000000;
-    border-bottom: 2px solid #f5f5f57c;
+    border-bottom: 1px solid #EDDC5A;
     transition: background-color 0.5s ease-in-out
   }
-
-.active {
-    border-bottom: 1px solid #EDDC5A;
-    border-radius: 3px;
-}
 
 /* End navbar */
 
@@ -231,6 +226,27 @@ nav {
 
 /* Inicio */
 
+ 
+
+/* Portafolio */
+
+.portafolioSec {
+    padding: 50px;
+    color: #ffffff;
+    background-image: url('../resources/portafolioBan.jpg');
+    background-blend-mode:overlay;
+    background-color: #2c2929;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.portafolioSec h3 {
+    background-color: #15161a9f;
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+}
 /* FIN INICIO */
 
 
