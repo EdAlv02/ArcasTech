@@ -22,9 +22,48 @@
 
 .arrow-container {
     position: fixed;
-    bottom: 15px; /* Establece el padding-bottom a 15 píxeles */
-    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    right: 45px;
+    bottom: 45px;
     transform: translateX(-50%);
+    z-index: 999;
+    animation: action 1s infinite alternate;
+    opacity: 0;
+  }
+
+  @keyframes action {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-15px);
+    }
+  }
+
+  .back-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color:#000000;
+    border-color: #EDDC5A;
+  }
+  
+  .invisible {
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+    pointer-events: none; /* Opcional: para que los elementos invisibles no reciban eventos */
+  }
+  
+  .visible {
+    opacity: 1;
+    transition: opacity 5s ease; 
+    pointer-events: auto; /* Opcional: restaura los eventos en elementos visibles */
   }
 
 .centerimg {
@@ -101,10 +140,20 @@ nav {
 }
 
 .scrolled {
-    background-color: rgba(255, 0, 0, 0);
-    box-shadow: 0px 1px 3px 1px rgb(44, 44, 44);
+
 }
 
+/* Estilo por defecto del navbar */
+.navbar {
+    background-color: transparent; /* Color de fondo inicial */
+    transition: background-color 0.3s ease; /* Transición suave */
+  }
+  
+  /* Estilo del navbar al hacer scroll */
+  .navbar.scrolled {
+    background-color: #000000;
+    box-shadow: 0px 1px 3px 1px rgb(44, 44, 44);
+  }
 
 /* .inicio-style {
     border-bottom: 1px solid #EDDC5A;

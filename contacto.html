@@ -35,7 +35,7 @@
     <!-- Contact Start -->
     <div class="container-xxl py-3">
         <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
+            <div class="text-center mb-5 mt-5" data-aos="fade-up">
               <h1 data-aos="fade-up" class="text-primary">Contacto</h1>
               <hr data-aos="fade-right" class="abUsHr text-secondary">
             </div>
@@ -130,29 +130,11 @@
       crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script type="text/javascript">
-      window.addEventListener("scroll", function () {
-        var header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 900);
-      })
-    </script>
-
-    <script>
-      const navbar = document.querySelector('.navbar');
-
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 0) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
-      });
-    </script>
-
     <script>
         AOS.init();
     </script>
+    <script src="js/arrow.js"></script>
+    <script src="js/navbar.js"></script>
 
 </body>
 

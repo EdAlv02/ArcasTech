@@ -54,24 +54,11 @@
 
 
 
-  <script type="text/javascript">
-    window.addEventListener("scroll", function () {
-      var header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > 900);
-    })
-  </script>
-
   <script>
-    const navbar = document.querySelector('.navbar');
-
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 0) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
+      AOS.init();
   </script>
+  <script src="js/arrow.js"></script>
+  <script src="js/navbar.js"></script>
 
 </body>
 
