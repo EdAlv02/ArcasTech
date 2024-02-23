@@ -1,5 +1,6 @@
+// Insertar archivos html en otro archivo Html
 window.onload = function () {
-  ["script", "header", "footer", "head"].forEach((id) => {
+  ["script", "footer", "head"].forEach((id) => {
     fetch(`templates/${id}.html`)
       .then((response) => response.text())
       .then((data) => {
@@ -7,6 +8,13 @@ window.onload = function () {
       });
   });
 };
+
+function pageName() {
+  const url = window.location.pathname;
+  const part = url.split("/");
+  console.log(part);
+
+}
 
 //Funcion navbar cambio de color
 window.addEventListener('scroll', function() {
@@ -32,22 +40,38 @@ window.addEventListener('scroll', function() {
   }
 }); 
 
-const pathname = window.location.pathname;
 
-switch (pathname) {
-  case "/index.html":
-    document.getElementById("inicio").classList.add("active");
-    break;
-  case "/nosotros.html":
-    document.getElementById("nosotros").classList.add("active");
-    break;
-  case "/servicios.html":
-    document.getElementById("servicios").classList.add("active");
-    break;
-  case "/portafolio.html":
-    document.getElementById("portafolio").classList.add("active");
-    break;
-  case "/contacto.html":
-    document.getElementById("contacto").classList.add("active");
-    break;
+// Funcion del identificador de páginas y mandar a llamar el archivo header.html a otro html
+// Función para cargar el archivo header.html
+function includeHeader() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("header").innerHTML = this.responseText;
+          // Luego de cargar el header, ejecutar la función para resaltar el enlace activo
+          setActiveNavLink();
+      }
+  };
+  xhttp.open("GET", "templates/header.html", true); // Cambia la ruta al directorio templates
+  xhttp.send();
 }
+
+// Función para establecer el enlace activo
+function setActiveNavLink() {
+  let url = window.location.href;
+  const tabs = ["index", "nosotros", "servicios", "portafolio", "contacto"];
+  tabs.forEach(e => {
+      if (url.indexOf(e + ".html") !== -1) {
+          setActive("tab-" + e);
+      }
+  });
+
+  function setActive(id) {
+      const liElement = document.getElementById(id);
+      const anchorElement = liElement.querySelector('a');
+      anchorElement.classList.add('active');
+  }
+}
+
+// Llamar a la función para cargar el header
+includeHeader();

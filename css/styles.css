@@ -152,6 +152,12 @@ nav {
     transition: background-color 0.5s ease-in-out
   }
 
+  .active {
+    border-bottom: 1px solid #EDDC5A;
+    border-width: 3px;
+    border-radius: 2px;
+  }
+
 /* End navbar */
 
 /*Main nosotros inicio*/
