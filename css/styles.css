@@ -178,7 +178,7 @@ nav {
     transition: .5s;
     padding: 10px;
     margin: 10px;
-    height: 280px
+    height: 280px;
 }
 
 
@@ -232,7 +232,23 @@ nav {
 
 /* Inicio */
 
- 
+/* Nosotros */
+.nosotrosSec {
+    padding: 50px;
+    color: #ffffff;
+    background-image: url('../resources/nosotrosBan.png');
+    background-blend-mode:overlay;
+    background-color: #2c2929;
+    background-position: center;
+    background-size: cover;
+}
+
+.nosotrosSec h3 {
+    background-color: #15161a9f;
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+} 
 
 /* Portafolio */
 
@@ -253,6 +269,8 @@ nav {
     text-align: center;
 }
 
+
+
 .work-with {
     border: 5px solid #F5F5F5;
     box-shadow: 0px 0px 5px 5px #313131;
@@ -266,7 +284,6 @@ nav {
     clip-path: polygon(50% 0%, 66% 24%, 98% 35%, 76% 58%, 79% 91%, 50% 75%, 21% 91%, 23% 58%, 2% 35%, 34% 24%);
     box-shadow: 0px 0px 5px 5px #313131;
     transition: all ease-in-out 2s;
-    transition-property: ;
 }
 
 .work-with img:hover {
