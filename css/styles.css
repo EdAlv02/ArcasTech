@@ -243,7 +243,6 @@ nav {
     background-blend-mode:overlay;
     background-color: #2c2929;
     background-position: center;
-    height: 100vh;
     background-size: cover;
 }
 
@@ -262,9 +261,28 @@ nav {
 
 .work-with img {
     background-size: cover;
-    width: 180px;
-    height: 180px;
-    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    width: 12vw;
+    height: 12vw;
+    clip-path: polygon(50% 0%, 66% 24%, 98% 35%, 76% 58%, 79% 91%, 50% 75%, 21% 91%, 23% 58%, 2% 35%, 34% 24%);
+    box-shadow: 0px 0px 5px 5px #313131;
+    transition: all ease-in-out 2s;
+    transition-property: ;
+}
+
+.work-with img:hover {
+    animation-name: show;
+    animation-duration: 1s;
+    animation-timing-function: 5s;
+    transition: all ease-in 2s;
+}
+
+@keyframes show {
+    0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-15px);
+      }
 }
   
 /* FIN INICIO */
