@@ -267,16 +267,16 @@ nav {
 
 /* Servicios */
 .serviciosSec {
-  background-color: #040611;
-  padding: 100px 0;
+  padding: 50px;
+  background-color: #686868;
 }
 
-.serviciosSec h3 {
-  background-color: #a3a3a39f;
-  margin: 50px;
+.serviciosSec h2 {
   padding: 10px;
-  color: #ffffff;
+  color: #eddC5A;
+  padding-bottom: 40px;
   text-align: center;
+  font-weight: bold;
 }
 
 .serviciosSec p {
@@ -286,10 +286,7 @@ nav {
 
 .servImages img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
-    filter: drop-shadow(20px 20px 20px 80px crimson);
+  
 }
 
 .flip-container {
@@ -313,6 +310,9 @@ nav {
 }
 
 .flipper {
+  background-color: #00304a;
+  height: 100%;
+
 	-webkit-transition: 0.6s;
 	-webkit-transform-style: preserve-3d;
 
@@ -409,33 +409,32 @@ nav {
   line-height: 2em;
 }
 
-.tag-wrap{
-  filter: drop-shadow(3px 4px 1px #eddC5A);
-}
-
 /* Portafolio */
 
 .portafolioSec {
   padding: 50px;
   color: #ffffff;
-  background-image: url("../resources/portafolioBan.jpg");
+  background-color: #e7e7e7;
+  /* background-image: url("../resources/portafolioBan.jpg"); */
   background-blend-mode: overlay;
   background-color: #2c2929;
   background-position: center;
   background-size: cover;
 }
 
-.portafolioSec h3 {
+.portafolioSec h2 {
   background-color: #15161a9f;
-  margin: 50px;
-  padding: 10px;
+  /* padding: 10px; */
   text-align: center;
+  color: #eddC5A;
+  font-weight: bold;
 }
 
 .work-with {
-  border: 5px solid #f5f5f5;
-  box-shadow: 0px 0px 5px 5px #313131;
-  border-radius: 10px;
+  border-radius: 37px;
+  background: linear-gradient(145deg, #22222273, #29292971);
+  box-shadow:  11px 11px 12px #363636,
+               -11px -11px 12px #818181;
 }
 
 .work-with img {
