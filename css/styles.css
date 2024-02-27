@@ -280,8 +280,6 @@ nav {
   -moz-perspective: 1000;
   -o-perspective: 1000;
   perspective: 1000;
-
-	border: 1px solid #ccc;
 }
 
 	.flip-container:hover .flipper,  
@@ -293,8 +291,8 @@ nav {
 	}
 
 .flip-container, .front, .back {
-	width: 320px;
-	height: 427px;
+	/* width: 320px;
+	height: 427px; */
 }
 
 .flipper {
@@ -325,7 +323,7 @@ nav {
 }
 
 .front {
-	background: url(http://davidwalsh.name/demo/dwflip.jpg) 0 0 no-repeat;
+	/* background: url(http://davidwalsh.name/demo/dwflip.jpg) 0 0 no-repeat; */
 	z-index: 2;
 }
 
@@ -334,7 +332,6 @@ nav {
 	-moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
 	transform: rotateY(180deg);
-
 	background: #f8f8f8;
 }
 
@@ -358,24 +355,29 @@ nav {
 }
 
 .back-logo {
-	position: absolute;
+	/* position: absolute; */
 	top: 40px;
 	left: 90px;
 	width: 160px;
 	height: 117px;
-	background: url(http://davidwalsh.name/demo/logo.png) 0 0 no-repeat;
 }
 
 .back-title {
 	font-weight: bold;
 	color: #00304a;
-	position: absolute;
-	top: 180px;
+	/* position: absolute; */
+	/* top: 180px;
 	left: 0;
-	right: 0;
+	right: 0; */
 	text-align: center;
-	text-shadow: 0.1em 0.1em 0.05em #acd7e5;
-	font-family: Courier;
+	/* text-shadow: 0.1em 0.1em 0.05em #acd7e5; */
+    filter: drop-shadow(20px 20px 20px 80px rgb(255, 255, 255));
+    top: 40px;
+	left: 90px;
+	width: 160px;
+	height: 117px;
+
+	font-family: Courier; 
 	font-size: 2em;
 }
 
@@ -393,6 +395,7 @@ nav {
 .tag-wrap{
   filter: drop-shadow(3px 4px 1px #eddC5A);
 }
+
 /* Portafolio */
 
 .portafolioSec {
