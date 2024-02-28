@@ -250,11 +250,10 @@ nav {
 /* Nosotros */
 .nosotrosSec {
   padding: 50px;
-  color: #ffffff;
   background-image: url("../resources/nosotrosBan.png");
   background-blend-mode: overlay;
   background-color: #2c2929;
-  background-position: center;
+  background-positiorgb(212, 49, 49)er;
   background-size: cover;
 }
 
@@ -266,6 +265,95 @@ nav {
 }
 
 /* Servicios */
+
+.flip-container {
+  perspective: 1000;
+  -moz-perspective: 1000;
+  -webkit-perspective: 1000;
+  /* padding: 10px; */
+  border-radius: 30px;
+  box-shadow: 1px 1px 1px #000000;
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  padding: 50px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 30px;
+  width: 100%;
+  box-shadow:  -12px -12px 24px #2a2a2a,
+             12px 12px 24px #a6a6a6;
+  height: 100%;
+  padding: 20px;
+  background-color: #c5c5c5;
+  
+}
+
+.flipper i {
+  font-size: 80px;
+  filter: drop-shadow(-8px -8px 16px #5f5824);
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 30px;
+}
+
+.front {
+  z-index: 2;
+  background-color: transparent;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background: #ffffff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 30px;
+  color: black;
+  box-sizing: border-box;
+}
+
+.back h4 {
+}
+
+.servImages .col-lg-3 {
+  padding: 0;
+}
+
+.servImages .flip-container {
+  height: 213px;
+  width: 100%;
+}
+
+.servImages .flip-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .serviciosSec {
   padding: 50px;
   background-color: #686868;
@@ -279,15 +367,18 @@ nav {
   font-weight: bold;
 }
 
+.servImages img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+/*  
 .serviciosSec p {
   text-align: center;
   padding-inline: 15%;
 }
 
-.servImages img {
-  width: 100%;
-  
-}
 
 .flip-container {
   -webkit-perspective: 1000;
@@ -304,12 +395,8 @@ nav {
 		transform: rotateY(180deg);
 	}
 
-.flip-container, .front, .back {
-	/* width: 320px;
-	height: 427px; */
-}
 
-.flipper {
+ .flipper {
   background-color: #00304a;
   height: 100%;
 
@@ -340,7 +427,7 @@ nav {
 }
 
 .front {
-	/* background: url(http://davidwalsh.name/demo/dwflip.jpg) 0 0 no-repeat; */
+	background: url(http://davidwalsh.name/demo/dwflip.jpg) 0 0 no-repeat;
 	z-index: 2;
 }
 
@@ -373,11 +460,7 @@ nav {
 
 .back-logo {
 	/* position: absolute; */
-	top: 40px;
-	left: 90px;
-	width: 160px;
-	height: 117px;
-}
+
 
 .back-title {
 	font-weight: bold;
@@ -407,6 +490,14 @@ nav {
 	padding: 0 20px;
   font-family: arial;
   line-height: 2em;
+} */
+
+.card {
+  width: 190px;
+  height: 254px;
+  border-radius: 30px;
+  background: lightgrey;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
 }
 
 /* Portafolio */
@@ -414,16 +505,14 @@ nav {
 .portafolioSec {
   padding: 50px;
   color: #ffffff;
-  background-color: #e7e7e7;
+  background-color: #757474;
   /* background-image: url("../resources/portafolioBan.jpg"); */
   background-blend-mode: overlay;
-  background-color: #2c2929;
   background-position: center;
   background-size: cover;
 }
 
 .portafolioSec h2 {
-  background-color: #15161a9f;
   /* padding: 10px; */
   text-align: center;
   color: #eddC5A;
@@ -431,29 +520,16 @@ nav {
 }
 
 .work-with {
-  border-radius: 37px;
-  background: linear-gradient(145deg, #22222273, #29292971);
-  box-shadow:  11px 11px 12px #363636,
-               -11px -11px 12px #818181;
+  border-radius: 41px;
+background: linear-gradient(315deg, #7d7c7c, #696868);
+box-shadow:  -28px -28px 56px #2f2e2e,
+             28px 28px 56px #bbbaba;
 }
 
 .work-with img {
   background-size: cover;
   width: 12vw;
   height: 12vw;
-  clip-path: polygon(
-    50% 0%,
-    66% 24%,
-    98% 35%,
-    76% 58%,
-    79% 91%,
-    50% 75%,
-    21% 91%,
-    23% 58%,
-    2% 35%,
-    34% 24%
-  );
-  
   box-shadow: 0px 0px 5px 5px #313131;
   transition: all ease-in 1s;
 }
