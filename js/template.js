@@ -60,16 +60,20 @@ function includeHeader() {
 function setActiveNavLink() {
   let url = window.location.href;
   const tabs = ["index", "nosotros", "servicios", "portafolio", "contacto"];
+  let isHomePage = url.endsWith("/") || !url.includes(".html");
+
   tabs.forEach(e => {
-      if (url.indexOf(e + ".html") !== -1) {
+      if ((isHomePage && e === "index") || url.includes(e + ".html")) {
           setActive("tab-" + e);
       }
   });
 
   function setActive(id) {
       const liElement = document.getElementById(id);
-      const anchorElement = liElement.querySelector('a');
-      anchorElement.classList.add('active');
+      if (liElement) {
+          const anchorElement = liElement.querySelector('a');
+          anchorElement.classList.add('active');
+      }
   }
 }
 
