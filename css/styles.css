@@ -272,7 +272,6 @@ nav {
   -webkit-perspective: 1000;
   /* padding: 10px; */
   border-radius: 30px;
-  box-shadow: 1px 1px 1px #000000;
 }
 
 .flip-container:hover .flipper,
@@ -329,16 +328,24 @@ nav {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  background: #ffffff;
   text-align: center;
+  background-color: #d8d8d8;
   padding: 20px;
   border-radius: 30px;
   color: black;
   box-sizing: border-box;
+  
+
 }
 
 .back h4 {
-    
+  display: flex;
+  align-items: center;
+  color: #eddC5A;
+  font-size:small;
+  padding-top: 20px;
+  padding: 20px;
+  text-shadow: 1px 1px 1px #000000 ;
 }
 
 .servImages .col-lg-3 {
