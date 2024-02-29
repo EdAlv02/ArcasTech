@@ -221,7 +221,7 @@ nav {
   padding: 5px;
   margin: 5px;
   height: 280px; 
-  border-radius: 60px;
+  border-radius: 30px;
   transition: all ease-in 1s;
   background: linear-gradient(145deg, #2e2e2e, #373737);
   box-shadow:  10px 10px 12px #141414,
@@ -303,9 +303,7 @@ nav {
   position: relative;
   padding: 50px;
   margin: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   margin: auto;
   border-radius: 30px;
   width: 100%;
@@ -314,7 +312,9 @@ nav {
   height: 100%;
   padding: 20px;
   background-color: #c5c5c5;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flipper i {
@@ -337,21 +337,19 @@ nav {
 
 .front {
   z-index: 2;
-  background-color: transparent;
+  
 }
 
 .back {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  text-align: center;
   background-color: #d8d8d8;
   padding: 20px;
   border-radius: 30px;
   color: black;
   box-sizing: border-box;
-  
-
+  text-align: center;
 }
 
 .back h4 {
@@ -544,17 +542,21 @@ nav {
 }
 
 .work-with {
-  border-radius: 41px;
+  border-radius: 30px;
 background: linear-gradient(315deg, #7d7c7c, #696868);
 box-shadow:  -28px -28px 56px #2f2e2e,
              28px 28px 56px #bbbaba;
+display: inline-block;
+}
+
+.img_container {
+  height: 150px;
+  width: 350px;
 }
 
 .work-with img {
-  background-size: cover;
-  width: 12vw;
-  height: 12vw;
-  box-shadow: 0px 0px 5px 5px #313131;
+  max-width: 150px;
+  max-height: 150px;
   transition: all ease-in 1s;
 }
 
