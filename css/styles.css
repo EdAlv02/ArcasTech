@@ -29,7 +29,7 @@
 }
 
 .bannerIndex p {
-  font-size: 25px;
+  letter-spacing: 1px;
   font-family:'bebas_neueregular', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -46,6 +46,12 @@
   z-index: 999;
   animation: action 1s infinite alternate;
   opacity: 0;
+}
+
+@media (max-width: 767px) {
+  .bannerIndex p {
+    font-size: 10px;
+  }
 }
 
 @keyframes action {
