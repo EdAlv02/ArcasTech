@@ -286,12 +286,11 @@ nav {
   perspective: 1000;
   -moz-perspective: 1000;
   -webkit-perspective: 1000;
-  /* padding: 10px; */
   border-radius: 30px;
 }
 
 .flip-container:hover .flipper,
-.flip-container.hover .flipper {
+.flip-container:hover .flipper {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   transform: rotateY(180deg);
@@ -346,6 +345,11 @@ nav {
   transform: rotateY(180deg);
   background-color: #d8d8d8;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
   border-radius: 30px;
   color: black;
   box-sizing: border-box;
@@ -353,8 +357,7 @@ nav {
 }
 
 .back h4 {
-  display: flex;
-  align-items: center;
+  text-align: center;
   color: #eddC5A;
   font-size:small;
   padding-top: 20px;
@@ -546,7 +549,10 @@ nav {
 background: linear-gradient(315deg, #7d7c7c, #696868);
 box-shadow:  -28px -28px 56px #2f2e2e,
              28px 28px 56px #bbbaba;
-display: inline-block;
+display: flex;
+align-items: center;
+justify-content: center;
+
 }
 
 .img_container {
@@ -558,6 +564,9 @@ display: inline-block;
   max-width: 150px;
   max-height: 150px;
   transition: all ease-in 1s;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .work-with img:hover {
