@@ -384,12 +384,15 @@ nav {
   background-color: #686868;
 }
 
-.serviciosSec h2 {
+h2 {
   padding: 10px;
   color: #eddC5A;
   padding-bottom: 40px;
   text-align: center;
   font-weight: bold;
+  font-size: 55px;
+  transition: all ease-in .25s;
+
 }
 
 .servImages img {
@@ -398,94 +401,6 @@ nav {
   align-items: center;
   margin: auto;
 }
-/*  
-.serviciosSec p {
-  text-align: center;
-  padding-inline: 15%;
-}
-
-
-.flip-container {
-  -webkit-perspective: 1000;
-  -moz-perspective: 1000;
-  -o-perspective: 1000;
-  perspective: 1000;
-}
-
-	.flip-container:hover .flipper,  
-  .flip-container.hover .flipper {
-		-webkit-transform: rotateY(180deg);
-		-moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-		transform: rotateY(180deg);
-	}
-
-
- .flipper {
-  background-color: #00304a;
-  height: 100%;
-
-	-webkit-transition: 0.6s;
-	-webkit-transform-style: preserve-3d;
-
-	-moz-transition: 0.6s;
-	-moz-transform-style: preserve-3d;
-  
-  -o-transition: 0.6s;
-	-o-transform-style: preserve-3d;
-
-	transition: 0.6s;
-	transform-style: preserve-3d;
-
-	position: relative;
-}
-
-.front, .back {
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-	backface-visibility: hidden;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.front {
-	background: url(http://davidwalsh.name/demo/dwflip.jpg) 0 0 no-repeat;
-	z-index: 2;
-}
-
-.back {
-	-webkit-transform: rotateY(180deg);
-	-moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-	transform: rotateY(180deg);
-	background: #f8f8f8;
-}
-
-.front .name {
-	font-size: 2em;
-	display: inline-block;
-	background: rgba(33, 33, 33, 0.9);
-	color: #f8f8f8;
-	font-family: Courier;
-	padding: 5px 10px;
-	border-radius: 5px;
-	bottom: 60px;
-	left: 25%;
-	position: absolute;
-	text-shadow: 0.1em 0.1em 0.05em #333;
-
-	-webkit-transform: rotate(-20deg);
-	-moz-transform: rotate(-20deg);
-  -o-transform: rotate(-20deg);
-	transform: rotate(-20deg);
-}
-
-.back-logo {
-	/* position: absolute; */
-
 
 .back-title {
 	font-weight: bold;
@@ -528,13 +443,16 @@ nav {
 /* Portafolio */
 
 .portafolioSec {
-  padding: 50px;
+  padding: 40px;
   color: #ffffff;
   background-color: #757474;
-  /* background-image: url("../resources/portafolioBan.jpg"); */
-  background-blend-mode: overlay;
-  background-position: center;
-  background-size: cover;
+}
+
+.portafolioSec button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .portafolioSec h2 {
@@ -544,49 +462,41 @@ nav {
   font-weight: bold;
 }
 
-.work-with {
-  border-radius: 30px;
-background: linear-gradient(315deg, #7d7c7c, #696868);
-box-shadow:  -28px -28px 56px #2f2e2e,
-             28px 28px 56px #bbbaba;
-display: flex;
-align-items: center;
-justify-content: center;
-
-}
-
-.img_container {
-  height: 150px;
-  width: 350px;
-}
-
-.work-with img {
-  max-width: 150px;
-  max-height: 150px;
-  transition: all ease-in 1s;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
 
 .work-with img:hover {
   transform: scale(1.2, 1.2);
   transition: all ease-in-out 0.5s;
 }
 
+.company-list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  border-radius: 30px;
+  background: linear-gradient(315deg, #7d7c7c, #696868);
+  box-shadow:  -28px -28px 56px #2f2e2e,
+               28px 28px 56px #bbbaba;
+}
+
+.company-logo {
+  width: 100px;
+  height: 100px;
+  transition: all ease-in 1s;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 10px;
+}
+
+.company-name {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
 /* FIN INICIO */
 
-@media (max-width: 555px) {
-  .centerimg img {
-    width: 250px;
-    padding-bottom: 10px;
-    transition: ease-in-out 0.2s all;
-  }
-
-  .bannerIndex {
-    transition: all 0.25s ease-in-out;
-  }
-}
 
 /* Footer */
 
@@ -603,4 +513,35 @@ footer {
 
 .arrow-container {
   transition: all ease-in 0.2s;
+}
+
+/* Medias Querys */
+
+@media (max-width: 1024px) {
+   h2 {
+    font-size: 40px;
+    transition: all ease-in-out .25s;
+  }
+}
+@media (max-width: 768px) {
+   h2 {
+    font-size: 35px;
+    transition: all ease-in-out .25s;
+  }
+}
+@media (max-width: 555px) {
+  .centerimg img {
+    width: 250px;
+    padding-bottom: 10px;
+    transition: ease-in-out 0.2s all;
+  }
+  
+  .bannerIndex {
+    transition: all 0.25s ease-in-out;
+  }
+  
+   h2 {
+    font-size: 35px;
+    transition: all ease-in-out .25s;
+  }
 }
