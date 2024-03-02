@@ -107,6 +107,7 @@
 .bannerIndex h2 {
   font-size: 3vw;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .hr hr{
@@ -318,7 +319,7 @@ nav {
 
 .flipper i {
   font-size: 80px;
-  filter: drop-shadow(-8px -8px 16px #5f5824);
+  text-shadow: 5px 5px 5px rgb(73, 73, 73);
 }
 
 .front,
@@ -345,7 +346,6 @@ nav {
   transform: rotateY(180deg);
   background-color: #d8d8d8;
   padding: 20px;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -354,14 +354,12 @@ nav {
   color: black;
   box-sizing: border-box;
   text-align: center;
+  padding: 30px;
 }
 
 .back h4 {
   text-align: center;
   color: #eddC5A;
-  font-size:small;
-  padding-top: 20px;
-  padding: 20px;
   text-shadow: 1px 1px 1px #000000 ;
 }
 
@@ -422,12 +420,10 @@ h2 {
 }
 
 .back p {
-	position: absolute;
 	bottom: 40px;
 	left: 0;
 	right: 0;
 	text-align: center;
-	padding: 0 20px;
   font-family: arial;
   line-height: 2em;
 } */
@@ -438,6 +434,35 @@ h2 {
   border-radius: 30px;
   background: lightgrey;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+}
+
+.styleBtn {
+  margin-top: 40px;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.styleBtn:hover {
+  background-color: #eddC5A;
+  box-shadow: 0px 15px 20px rgba(41, 39, 12, 0.4);
+  color: #000000;
+  font-weight: bold;
+  transform: translateY(-7px);
+}
+
+.styleBtn:active {
+  transform: translateY(-1px);
 }
 
 /* Portafolio */
