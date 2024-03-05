@@ -114,7 +114,7 @@ body {
 }
 
 .hr hr{
-  width: 80%;
+  width: 60%;
   margin: auto;
   color: rgb(255, 255, 255);
   opacity: 100%;
@@ -303,15 +303,13 @@ nav {
   position: relative;
   padding: 50px;
   margin: 10px;
-
-  margin: auto;
-  border-radius: 30px;
   width: 100%;
-  box-shadow:  -12px -12px 24px #2a2a2a,
-             12px 12px 24px #a6a6a6;
+  border-radius: 30px;
+  background: linear-gradient(225deg, #444444, #666666);
+  box-shadow:  -5px 5px 10px #070707,
+               5px -5px 10px #7e7e7e;
   height: 100%;
   padding: 20px;
-  background-color: #c5c5c5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -344,14 +342,14 @@ nav {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  background-color: #d8d8d8;
+  background-color: #444444;
   padding: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5rem;
   border-radius: 30px;
-  color: black;
+  color: rgb(0, 0, 0);
   box-sizing: border-box;
   text-align: center;
   padding: 30px;
@@ -361,6 +359,10 @@ nav {
   text-align: center;
   color: #eddC5A;
   text-shadow: 1px 1px 1px #000000 ;
+}
+
+.back p {
+  color: rgb(255, 255, 255);
 }
 
 .servImages .col-lg-3 {
@@ -388,7 +390,7 @@ h2 {
   padding-bottom: 40px;
   text-align: center;
   font-weight: bold;
-  font-size: 55px;
+  font-size: 50px;
   transition: all ease-in .25s;
 
 }
@@ -403,12 +405,7 @@ h2 {
 .back-title {
 	font-weight: bold;
 	color: #00304a;
-	/* position: absolute; */
-	/* top: 180px;
-	left: 0;
-	right: 0; */
 	text-align: center;
-	/* text-shadow: 0.1em 0.1em 0.05em #acd7e5; */
     filter: drop-shadow(20px 20px 20px 80px rgb(255, 255, 255));
     top: 40px;
 	left: 90px;
@@ -495,14 +492,14 @@ h2 {
 
 .company-list {
   margin-top: 20px;
+  margin-inline: 15%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1em;
   border-radius: 30px;
-  background: linear-gradient(315deg, #7d7c7c, #696868);
-  box-shadow:  -28px -28px 56px #2f2e2e,
-               28px 28px 56px #bbbaba;
+  box-shadow: inset 5px -5px 10px #232323,
+              inset -5px 5px 10px #676767;
 }
 
 .company-logo {
@@ -512,7 +509,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  margin: 10px;
+  margin-inline: 5%;
 }
 
 .company-name {
@@ -569,4 +566,6 @@ footer {
     font-size: 35px;
     transition: all ease-in-out .25s;
   }
+
+  .co
 }
