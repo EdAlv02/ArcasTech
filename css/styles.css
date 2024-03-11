@@ -281,6 +281,10 @@ nav {
   text-align: center;
 }
 
+.nosotrosSec p {
+  text-align: justify;
+}
+
 /* Servicios */
 
 .flip-container {
@@ -484,15 +488,9 @@ h2 {
   font-weight: bold;
 }
 
-
-.work-with img:hover {
-  transform: scale(1.2, 1.2);
-  transition: all ease-in-out 0.5s;
-}
-
 .company-list {
   margin-top: 20px;
-  margin-inline: 15%;
+  margin-inline: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -519,6 +517,13 @@ h2 {
 
 /* FIN INICIO */
 
+/* SERVICIOS */
+
+.ServTitle {
+  margin-top: 20px;
+}
+
+/* FIN SERVICIOS */
 
 /* Footer */
 
@@ -566,6 +571,6 @@ footer {
     font-size: 35px;
     transition: all ease-in-out .25s;
   }
-
-  .co
 }
+
+
