@@ -104,7 +104,7 @@ body {
   text-align: center;
   padding: 0;
   font-weight: bold;
- 
+
 }
 
 .bannerIndex h2 {
@@ -153,7 +153,7 @@ body {
 /* .navbar-collapse a[aria-current="page"]  {
     border-bottom: 2px solid #EDDC5A;
     padding-bottom: 2px;
-    
+
 } */
 
 .navbar-collapse {
@@ -221,7 +221,7 @@ nav {
   box-shadow: 0 0 16px #333;*/
   padding: 5px;
   margin: 5px;
-  height: 280px; 
+  height: 280px;
   border-radius: 30px;
   transition: all ease-in 1s;
   background: linear-gradient(145deg, #2e2e2e, #373737);
@@ -309,9 +309,9 @@ nav {
   margin: 10px;
   width: 100%;
   border-radius: 30px;
-  background: linear-gradient(225deg, #444444, #666666);
-  box-shadow:  -5px 5px 10px #070707,
-               5px -5px 10px #7e7e7e;
+  background: linear-gradient(225deg, #ffffff77, #ffffff9f);
+  /* box-shadow:  -5px 5px 10px #070707,
+               5px -5px 10px #303030; */
   height: 100%;
   padding: 20px;
   display: flex;
@@ -339,21 +339,21 @@ nav {
 
 .front {
   z-index: 2;
-  
+
 }
 
 .back {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  background-color: #444444;
+  background-color: #030303;
   padding: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5rem;
   border-radius: 30px;
-  color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);  
   box-sizing: border-box;
   text-align: center;
   padding: 30px;
@@ -385,7 +385,8 @@ nav {
 }
 .serviciosSec {
   padding: 50px;
-  background-color: #686868;
+  background-image: url('../resources/serviceBan.jpg');
+  background-color: #f80000;
 }
 
 h2 {
@@ -406,6 +407,16 @@ h2 {
   margin: auto;
 }
 
+.serviciosSec hr {
+  border: 3px solid #eddC5A;
+  margin-inline: 30%;
+  -webkit-border-image: none;
+-moz-border-image: none;
+-o-border-image: none;
+border-image: none;
+border-radius: 30px;
+}
+
 .back-title {
 	font-weight: bold;
 	color: #00304a;
@@ -416,7 +427,7 @@ h2 {
 	width: 160px;
 	height: 117px;
 
-	font-family: Courier; 
+	font-family: Courier;
 	font-size: 2em;
 }
 
@@ -562,11 +573,11 @@ footer {
     padding-bottom: 10px;
     transition: ease-in-out 0.2s all;
   }
-  
+
   .bannerIndex {
     transition: all 0.25s ease-in-out;
   }
-  
+
    h2 {
     font-size: 35px;
     transition: all ease-in-out .25s;
