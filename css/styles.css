@@ -554,11 +554,15 @@ h2 {
   font-size: 20px;
 }
 
+
+
 .iconStyle {
   background-color: white;
   padding: 18px;
   border-radius: 30px;
+  font-size: 25px;
   margin-right: 30px;
+  
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -568,7 +572,7 @@ h2 {
 }
 
 /* Style the collapsible content. Note: hidden by default */
-.content {
+.contentServ {
   padding: 0 18px;
   display: none;
   overflow: hidden;
