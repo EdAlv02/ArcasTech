@@ -167,6 +167,7 @@ nav {
   color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0);
   box-shadow: none;
+  z-index: 0;
 }
 
 .navbar-toggler {
@@ -262,7 +263,7 @@ nav {
   position: absolute;
   top: 30px;
   left: 30px;
-  z-index: 9999; /* Para asegurarse de que esté encima del iframe */
+  z-index: 1; /* Para asegurarse de que esté encima del iframe */
   padding: 20px; 
   background: rgb(36,34,34);
   background: radial-gradient(circle, rgba(36,34,34,1) 0%, rgba(0,0,0,1) 91%);
@@ -676,7 +677,27 @@ h2 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* ... Additional styles for other elements */
+/* Collapse */
+
+.cardServ {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: -10px;
+  top: -40px;
+  position:relative;
+  /* border-radius: 30px; */
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  z-index: 1;
+  padding-top: 50px;
+}
+
+.cardServ::after {
+  content: "";
+  width: 100%;
+}
 
 .ServHead {
   opacity: 1;
