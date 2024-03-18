@@ -791,14 +791,14 @@ h2 {
 .frame{
 	width: 600px;
 	height: 350px;
-	margin: 250px auto 0;
+	margin: 20px auto 0;
 	position: relative;
 	background: #7e7320;
 	border-radius:0 0 40px 40px;
   text-align: center;
 }
 
-#button_open_envelope{
+#button_open_envelope, #button_close_envelope{
 	width: 180px;
 	position: absolute;
 	z-index: 311;
@@ -813,26 +813,58 @@ h2 {
   font-family: "bebas_neueregular", "Lucida Sans Unicode", "Lucida Grande",
   "Lucida Sans", Arial, sans-serif;
 }
-#button_open_envelope:hover{
+
+#button_open_envelope:hover, #button_close_envelope:hover{
 	background: #FFf;
 	color: #7e7320;
 	transform:scale(1.1);
 	transition:background .25s, transform .5s,ease-in;
 	cursor: pointer;
 }
+
+#button_close_envelope {
+  width: 180px;
+  z-index: 900;
+  background-color: transparent;
+  display: none; /*Para ocultar el botón inicialmente  */
+  position: absolute;
+  top: -100px; /* Lo colocamos fuera de la vista inicialmente */
+  left: 208px;
+  transition-delay:2.5s;
+}
+
+
 .message{
 	position: relative;
 	width: 580px;
 	min-height:300px;
 	height: auto;
-	background: #fff;
+	background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(69,69,69,1) 70%, rgba(65,65,65,1) 96%);
 	margin: 0 auto;
 	top: 30px;
-	box-shadow: 0 0 5px 2px #333;
+	box-shadow: 0 0 5px 2px #beb255;
 	transition:2s ease-in-out;
 	transition-delay:1.5s;
 	z-index: 300;
 }
+
+.input-group-text {
+  background-color: transparent !important;
+  border-color: #eddc5a !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.form-control {
+  background-color: transparent !important;
+  border-color: #eddc5a !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
 .left,.right,.top{width: 0;	height: 0;position:absolute;top:0;z-index: 310;}
 .left{	
 	border-left: 300px solid #f5df38;
@@ -871,6 +903,11 @@ h2 {
 	border-top: 200px solid #7e7320;
 	z-index: 200;
 }
+.close{
+  transform-origin:top;
+	transition:transform .7s,border .7s,z-index .7s ease-in-out;
+	z-index: 400;
+}
 .pull{
 	-webkit-animation:message_animation 2s 1 ease-in-out;
 	animation:message_animation 2s 1 ease-in-out;
@@ -880,35 +917,15 @@ h2 {
 	transition-delay:1s;
 	z-index: 350;
 }
-#name,#email,#phone,#messarea,#send{
-	margin: 0;
-	padding: 0 0 0 10px;
-	width: 570px;
-	height:40px;
-	float: left;
-	display: block;
-	font-size: 18px;
-	color: #2b67cb;
-	border:none;
-	border-bottom:1px solid #bdbdbd;
-	letter-spacing: normal;
-}
-#messarea{
-	height: 117px;
-	width: 560px;
-	overflow: auto;
-	border:none;
-	padding: 10px;
-}
-#send{ 
-	width:   580px;
-	padding: 0;	
-	border:  none;
-	cursor:  pointer;
-	background: #7CB342;
-	color: #fff;
-	transition:.35s;
-	letter-spacing: 1px;
+
+.not-pull{
+	-webkit-animation:inmessage_animation 2s 1 ease-in-out;
+	animation:inmessage_animation 2s 1 ease-in-out;
+	-webkit-animation-delay:.9s;
+	animation-delay:.45s;
+	transition:1.5s;
+	transition-delay:1s;
+	z-index: 250;
 }
 
 
@@ -953,6 +970,51 @@ h2 {
 	100%{
 		transform:translatey(0px);
 		z-index: 350;
+		transition: 1s ease-in-out;
+	}
+}
+
+@-webkit-keyframes inmessage_animation {
+	0%{
+		transform:translatey(0px);
+		z-index: 350;
+		transition: 1s ease-in-out;
+	}
+	50%{
+		transform:translatey(-340px);
+		z-index: 350;
+		transition: 1s ease-in-out;
+	}
+	51%{
+		transform:translatey(-340px);
+		z-index: 300;
+		transition: 1s ease-in-out;
+	}
+	100%{
+		transform:translatey(0px);
+		z-index: 300;
+		transition: 1s ease-in-out;
+	}
+}
+@keyframes inmessage_animation {
+	0%{
+		transform:translatey(0px);
+		z-index: 350;
+		transition: 1s ease-in-out;
+	}
+	50%{
+		transform:translatey(-340px);
+		z-index: 350;
+		transition: 1s ease-in-out;
+	}
+	51%{
+		transform:translatey(-340px);
+		z-index: 300;
+		transition: 1s ease-in-out;
+	}
+	100%{
+		transform:translatey(0px);
+		z-index: 300;
 		transition: 1s ease-in-out;
 	}
 }

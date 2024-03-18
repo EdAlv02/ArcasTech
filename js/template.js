@@ -82,8 +82,21 @@ includeHeader();
 
 // Funcion para abrir el sobre
 $(document).ready(function(){
-	$('.frame').click(function(){
-		$('.top').addClass('open');
-		$('.message').addClass('pull');
-	})
+  $('#button_open_envelope').click(function(){
+      $('.top').removeClass('close').addClass('open');
+      $('.message').removeClass('not-pull').addClass('pull');
+      $('#button_close_envelope').delay(2500).fadeIn(900);
+  });
+});
+
+// Función para cerrar el sobre
+$(document).ready(function(){
+  $('#button_close_envelope').click(function(event){
+      event.stopPropagation();
+      $('.message').removeClass('pull').addClass('not-pull');
+      $(this).fadeOut(300).delay(500);
+      setTimeout(function(){
+        $('.top').removeClass('open').addClass('close');
+      }, 2500);
+  });
 });

@@ -76,13 +76,15 @@
         <div class="" data-aos="fade-up">
             <iframe class="rounded"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.0140137209787!2d-103.2450153257055!3d20.62828560141482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b45fe8b5227b%3A0x6d4328f560e7b049!2sC.%20L%C3%B3pez%20Cotilla%2091%2C%20Tonal%C3%A1%20Centro%2C%2045400%20Tonal%C3%A1%2C%20Jal.!5e0!3m2!1ses!2smx!4v1708310723696!5m2!1ses!2smx"
-                frameborder="0" style="width: 100%; height: 85vh; padding: 10px; border:0;" allowfullscreen="" aria-hidden="false"
+                frameborder="0" style="width: 100%; height: 85vh; padding: 10px; border:0; z-index: 900;" allowfullscreen="" aria-hidden="false"
                 tabindex="0"></iframe>
         </div>
         <div class="container mt-4">
             <div class="">
+                <h3 class="text-center mb-3 p-2 ">Envianos un mensaje para más información</h3>
+                <hr>
                 <div class = "frame">
-                    <div id = "button_open_envelope">Email me</div>
+                    <div id = "button_open_envelope">Envia un correo</div>
                     <div class = "message">
                         <form>
                             <div class="row align-items-center">
@@ -90,7 +92,7 @@
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="fa-solid fa-user text-primary"></i></span>
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" style="width: 100%;" id="name" placeholder=" ">
+                                            <input type="text" class="form-control" style="width: 95%;" id="name" placeholder=" ">
                                             <label for="name">Nombre</label>
                                         </div>
                                     </div>
@@ -99,7 +101,7 @@
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="fa-solid fa-envelope text-primary"></i></span>
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" style="width: 100%;" id="email" placeholder=" ">
+                                            <input type="email" class="form-control" style="width: 95%;" id="email" placeholder=" ">
                                             <label for="email">Correo</label>
                                         </div>
                                     </div>
@@ -108,7 +110,7 @@
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="fa-solid fa-comments text-primary"></i></span>
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder=" " id="message" style="height: 150px; width: 100%;"></textarea>
+                                            <textarea class="form-control" placeholder=" " id="message" style="height: 150px; width: 98%;"></textarea>
                                             <label for="message">Mensaje</label>
                                         </div>
                                     </div>
@@ -123,6 +125,7 @@
                     <div class = "left"></div>
                     <div class = "right"></div>
                     <div class = "top"></div>
+                    <div ><button id="button_close_envelope">Cerrar sobre</button></div>
                 </div>
             </div>
         </div>
