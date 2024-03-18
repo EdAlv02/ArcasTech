@@ -99,7 +99,8 @@ $(document).ready(function(){
   $('#button_open_envelope').click(function(){
       $('.top').removeClass('close').addClass('open');
       $('.message').removeClass('not-pull').addClass('pull');
-      $('#button_close_envelope').delay(2500).fadeIn(900);
+      $('#button_close_envelope').delay(2600).fadeIn(900);
+      $(this).hide();
   });
 });
 
@@ -112,5 +113,8 @@ $(document).ready(function(){
       setTimeout(function(){
         $('.top').removeClass('open').addClass('close');
       }, 2500);
+      setTimeout(function(){
+        $('#button_open_envelope').show();
+      }, 3200)
   });
 });
