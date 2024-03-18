@@ -80,8 +80,15 @@ function setActiveNavLink() {
 // Llamar a la función para cargar el header
 includeHeader();
 
+// Funcion para abrir el sobre
+$(document).ready(function(){
+	$('.frame').click(function(){
+		$('.top').addClass('open');
+		$('.message').addClass('pull');
+	})
+});
 
-
+// Funcion botones Servicio
 function addActiveOn(button) {
   if (!button.classList.contains('collapsible')) {
     return; // Ignore if not a collapsible button

@@ -24,6 +24,9 @@
     <!-- Fontawesome Icons -->
     <script src="https://kit.fontawesome.com/28ed401f28.js" crossorigin="anonymous"></script>
 
+    <!-- Jquery v1.11.2 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
     <!-- Link to css styles -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -77,43 +80,50 @@
                 tabindex="0"></iframe>
         </div>
         <div class="container mt-4">
-            <div class="row g-4">
-                <div class="">
-                    <form>
-                        <div class="row g-3 align-items-center">
-                            <div class="col-md-6">
-                                <div class="input-group" data-aos="fade-right">
-                                    <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder=" ">
-                                        <label for="name">Nombre</label>
+            <div class="">
+                <div class = "frame">
+                    <div id = "button_open_envelope">Email me</div>
+                    <div class = "message">
+                        <form>
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fa-solid fa-user text-primary"></i></span>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" style="width: 100%;" id="name" placeholder=" ">
+                                            <label for="name">Nombre</label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="input-group" data-aos="fade-left">
-                                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder=" ">
-                                        <label for="email">Correo</label>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fa-solid fa-envelope text-primary"></i></span>
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" style="width: 100%;" id="email" placeholder=" ">
+                                            <label for="email">Correo</label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="input-group" data-aos="fade-up">
-                                    <span class="input-group-text"><i class="fa-solid fa-comments"></i></span>
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder=" " id="message" style="height: 150px"></textarea>
-                                        <label for="message">Mensaje</label>
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fa-solid fa-comments text-primary"></i></span>
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder=" " id="message" style="height: 150px; width: 100%;"></textarea>
+                                            <label for="message">Mensaje</label>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="col-12">
+                                    <button class="button w-100 py-3" type="submit">Enviar mensaje</button>                 
+                                </div>
                             </div>
-                            <div class="col-12"  data-aos="fade-down">
-                                <button class="button w-100 py-3" type="submit">Enviar mensaje</button>                 
-                            </div>
-                        </div>
-                    </form>
-                </div>   
+                        </form>
+                    </div>
+                    <div class = "bottom"></div>			
+                    <div class = "left"></div>
+                    <div class = "right"></div>
+                    <div class = "top"></div>
+                </div>
             </div>
         </div>
     </div>
