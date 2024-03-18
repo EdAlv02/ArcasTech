@@ -80,6 +80,20 @@ function setActiveNavLink() {
 // Llamar a la función para cargar el header
 includeHeader();
 
+// Funcion botones Servicio
+function addActiveOn(button) {
+  if (!button.classList.contains('collapsible')) {
+    return; // Ignore if not a collapsible button
+  }
+
+  button.addEventListener('click', () => {
+    button.classList.toggle('activeOn');
+  });
+}
+
+const buttons = document.querySelectorAll('.collapsible');
+buttons.forEach(button => addActiveOn(button));
+
 // Funcion para abrir el sobre
 $(document).ready(function(){
   $('#button_open_envelope').click(function(){
