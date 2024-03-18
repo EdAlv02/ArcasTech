@@ -79,3 +79,11 @@ function setActiveNavLink() {
 
 // Llamar a la función para cargar el header
 includeHeader();
+
+// Funcion para abrir el sobre
+$(document).ready(function(){
+	$('.frame').click(function(){
+		$('.top').addClass('open');
+		$('.message').addClass('pull');
+	})
+});
