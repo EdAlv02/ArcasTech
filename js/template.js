@@ -79,3 +79,19 @@ function setActiveNavLink() {
 
 // Llamar a la función para cargar el header
 includeHeader();
+
+
+
+function addActiveOn(button) {
+  if (!button.classList.contains('collapsible')) {
+    return; // Ignore if not a collapsible button
+  }
+
+  button.addEventListener('click', () => {
+    button.classList.toggle('activeOn');
+  });
+}
+
+// Add the function to each collapsible button
+const buttons = document.querySelectorAll('.collapsible');
+buttons.forEach(button => addActiveOn(button));

@@ -346,6 +346,21 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
       </script>
 
+<script>
+  const buttons = document.querySelectorAll('.collapsible');
+  
+  buttons.forEach(button => {
+    button.addEventListener('mouseover', () => {
+      button.classList.add('hover');
+    });
+  
+    button.addEventListener('mouseout', () => {
+      button.classList.remove('hover');
+    });
+  });
+  </script>
+  
+
     <!-- Script Animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
