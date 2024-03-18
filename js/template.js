@@ -80,14 +80,6 @@ function setActiveNavLink() {
 // Llamar a la función para cargar el header
 includeHeader();
 
-// Funcion para abrir el sobre
-$(document).ready(function(){
-	$('.frame').click(function(){
-		$('.top').addClass('open');
-		$('.message').addClass('pull');
-	})
-});
-
 // Funcion botones Servicio
 function addActiveOn(button) {
   if (!button.classList.contains('collapsible')) {
@@ -99,6 +91,16 @@ function addActiveOn(button) {
   });
 }
 
-// Add the function to each collapsible button
 const buttons = document.querySelectorAll('.collapsible');
 buttons.forEach(button => addActiveOn(button));
+
+// Funcion para abrir el sobre
+$(document).ready(function(){
+	$('.frame').click(function(){
+		$('.top').addClass('open');
+		$('.message').addClass('pull');
+	})
+});
+
+
+
