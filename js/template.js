@@ -83,7 +83,7 @@ includeHeader();
 // Funcion botones Servicio
 function addActiveOn(button) {
   if (!button.classList.contains('collapsible')) {
-    return; // Ignore if not a collapsible button
+    return; 
   }
 
   button.addEventListener('click', () => {
@@ -93,6 +93,7 @@ function addActiveOn(button) {
 
 const buttons = document.querySelectorAll('.collapsible');
 buttons.forEach(button => addActiveOn(button));
+
 
 // Funcion para abrir el sobre
 $(document).ready(function(){
