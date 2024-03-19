@@ -513,6 +513,12 @@ h2 {
   background-size: cover;
 }
 
+.elementsServ h3 {
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
 /* Botones plegables */
 .collapsible {
   display: inline-flex;
@@ -618,16 +624,25 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  justify-content: center;
+  display: flex;
+
 }
 
 .ServHead div {
   background-color: #313131bb;
   padding: 30px;
+  width: 80%;
+  text-align: center;
   border-radius: 20px;
 }
 
 .ServTitle {
   margin-top: 20px;
+}
+
+.a1 {
+  border: 1px solid;
 }
 
 .collapsible {
@@ -702,16 +717,24 @@ h2 {
 
 .cont4 {
   background-image: linear-gradient(
-      rgba(100, 162, 255, 0.767),
-      rgba(5, 51, 136, 0.658)
+      rgba(88, 88, 88, 0.767),
+      rgba(9, 83, 221, 0.658)
     ),
     url("../resources/Serv4.jpg");
 }
 
+.cont5 {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.733),
+      rgba(0, 255, 255, 0.493)
+    ),
+    url("../resources/Serv5.png");
+}
+
 
 .contenido img {
+  width: 80%;
   padding: 0;
-  width: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -724,6 +747,29 @@ h2 {
   display: flex;
   padding: 0;
   filter: drop-shadow(0 5px 0 #fff);
+}
+
+hr {
+  border-width: 3px;
+  border-color: #eddc5a;
+  margin: auto;
+}
+
+.iconDesp {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 30px;
+  margin-top: 15px;
+}
+.cont5 i {
+  border-right: 2px solid #eddc5a;
+  width: 100%; 
+  font-size: 40px;
+}
+
+.cont5 {
+  text-shadow: 1px 1px 3px black;
 }
 
 /* ---------------- FIN SERVICIOS ---------------- */
