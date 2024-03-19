@@ -731,6 +731,14 @@ h2 {
     url("../resources/Serv5.png");
 }
 
+.cont6 {
+  background-image: linear-gradient(
+    rgba(138, 138, 138, 0.733),
+      rgba(134, 0, 0, 0.493)
+    ),
+    url("../resources/Serv6.jpg");
+}
+
 
 .contenido img {
   width: 80%;
