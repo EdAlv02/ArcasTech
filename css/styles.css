@@ -527,7 +527,7 @@ h2 {
   background: transparent;
   padding: 0;
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  box-shadow: 0 0 10px rgba(82, 82, 82, 0.377);
+  box-shadow: 2px 2px 3px #eddc5a;
   color: #ffffff;
   width: 100%;
   border: none;
@@ -739,6 +739,24 @@ h2 {
     url("../resources/Serv6.jpg");
 }
 
+.cont7 {
+  background-image: linear-gradient(
+    rgba(138, 138, 138, 0.733),
+      rgba(255, 196, 0, 0.493)
+    ),
+    url("../resources/Serv7.jpg");
+    text-shadow: 1px 1px 3px black;
+  }
+  
+  .cont8 {
+    background-image: linear-gradient(
+      rgba(101, 0, 168, 0.733),
+      rgba(155, 155, 155, 0.493)
+      ),
+      url("../resources/Serv8.jpg");
+      text-shadow: 1px 1px 3px black;
+}
+
 
 .contenido img {
   width: 80%;
@@ -780,6 +798,16 @@ hr {
   text-shadow: 1px 1px 3px black;
 }
 
+.roundDiv {
+  padding: 30px;
+  border-radius: 50%;
+  border: 3px solid #eddc5a;
+  border-style: dotted;
+}
+
+.cont7 i {
+  font-size: 25px;
+}
 /* ---------------- FIN SERVICIOS ---------------- */
 
 /* ---------------- CONTACTO --------------------- */
