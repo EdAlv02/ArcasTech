@@ -497,6 +497,103 @@ h2 {
 
 /* ---------------- FIN INICIO ---------------- */
 
+/* ---------------- ABOUT US   ---------------- */
+
+.ContHead-about-us {
+  /* background-image: url("../resources/AcercaBanner.jpg"); */
+  background: linear-gradient(rgba(49, 49, 7, 0.7), rgba(49, 49, 7, 0.7)), url(../resources/AcercaBanner.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+.ContHead-about-us div {
+  background-color: #313131bb;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.ContHead-about-us p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "bebas_neueregular", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.section-about {
+  background-image:  linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(60deg, rgba(0,0,0,0.5) 25%, transparent 25.5%, transparent 75%, rgba(0,0,0,0.5) 75%, rgba(0,0,0,0.5)), linear-gradient(60deg, rgba(0,0,0,0.5) 25%, transparent 25.5%, transparent 75%, rgba(0,0,0,0.5) 75%, rgba(0,0,0,0.5));
+  background-size: 120px 210px;
+  background-position: 0 0, 0 0, 60px 105px, 60px 105px, 0 0, 60px 105px;
+  background-color: #8c8c8c;
+}
+
+.section-mision {
+  background:
+  conic-gradient(from -116.36deg at 25% 75%,#5d5d60 52.72deg,#0000 0), conic-gradient(from -116.36deg at 25% 75%,#5d5d60 52.72deg,#0000 0) calc(3*70px) calc(70px/2),
+  conic-gradient(from   63.43deg at 75% 75%,#5d5d60 52.72deg,#0000 0), conic-gradient(from   63.43deg at 75% 75%,#5d5d60 52.72deg,#0000 0) calc(3*70px) calc(70px/2),
+  conic-gradient(
+    #838383   63.43deg ,#b6b6b6 0 116.36deg,
+    #838383 0 180deg   ,#b6b6b6 0 243.43deg,
+    #838383 0 296.15deg,#b6b6b6 0);
+background-size: 140px 70px;
+
+}
+
+.section-vision {
+  background:
+  repeating-conic-gradient(from 30deg,#0000 0 120deg,#666 0 180deg) 
+   120px 69.24px,
+  repeating-conic-gradient(from 30deg,#000000 0 60deg,#333 0 120deg,#666 0 180deg);
+background-size: 240px 138px;
+}
+.section-history {
+  background: 
+  linear-gradient(145deg,#838383 10%,#b6b6b6 10.5% 19%,#0000 19.5% 80.5%,#b6b6b6 81% 89.5%,#505050 90%), 
+  linear-gradient(145deg,#838383 10%,#b6b6b6 10.5% 19%,#0000 19.5% 80.5%,#b6b6b6 81% 89.5%,#505050 90%) calc(60px) 120px,
+  linear-gradient(35deg,#838383 10%,#b6b6b6 10.5% 19%,#0000 19.5% 80.5%,#b6b6b6 81% 89.5%,#505050 90%), 
+  linear-gradient( 35deg,#838383 10%,#b6b6b6 10.5% 19%,#0000 19.5% 80.5%,#b6b6b6 81% 89.5%,#505050 90%) calc(60px) 120px,
+  conic-gradient(from -90deg at 37.5% 50%,#0000 75%,#838383 0) calc(60px/4) 0,
+  conic-gradient(from -90deg at 37.5% 50%,#0000 75%,#505050 0) calc(60px) 0,
+  linear-gradient(90deg,#505050 38%,#838383 0 50%,#505050 0 62%,#838383 0);
+background-size: 120px calc(2*120px/3);
+
+}
+
+.about-container {
+  padding: 20px;
+  background: rgb(36, 34, 34);
+  background: radial-gradient(
+    circle,
+    rgba(36, 34, 34, 1) 0%,
+    rgba(0, 0, 0, 1) 91%
+  );
+  border-radius: 10px;
+  box-shadow: inset 5px -5px 10px #676767, inset -5px 5px 10px #676767;
+}
+
+.image-left {
+border-radius: 20px;
+background: #eddc5a;
+box-shadow:  16px 16px 20px #ab9e41,
+             -16px -16px 20px #ffff73;
+}
+
+.image-right {
+  border-radius: 20px;
+background: #eddc5a;
+box-shadow:  -16px 16px 20px #ab9e41,
+             16px -16px 20px #ffff73;
+}
+
+.separate {
+  border-color:  #ffffff !important;
+  border-width: 5px;
+  -webkit-box-shadow: 0px 0px 25px 25px rgba(182,182,182,1);
+  -moz-box-shadow: 0px 0px 25px 25px rgba(182,182,182,1);
+  box-shadow: 0px 0px 25px 25px rgba(182,182,182,1);
+}
+
 /* ---------------- SERVICIOS ---------------- */
 
 /* Contenedor principal */
@@ -788,7 +885,8 @@ hr {
 
 /* Head Contacto */
 .ContHead {
-  background-image: url("../resources/ContactBanner.jpg");
+  /* background-image: url("../resources/ContactBanner.jpg"); */
+  background: linear-gradient(rgba(49, 49, 7, 0.7), rgba(49, 49, 7, 0.7)), url(../resources/ContactBanner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
