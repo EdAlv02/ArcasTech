@@ -521,7 +521,7 @@ h2 {
 
 .ContHead-about-us {
   /* background-image: url("../resources/AcercaBanner.jpg"); */
-  background: linear-gradient(rgba(49, 49, 7, 0.7), rgba(49, 49, 7, 0.7)),
+  background-image: 
     url(../resources/AcercaBanner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -534,7 +534,7 @@ h2 {
 .ContHead-about-us div {
   background-color: #313131bb;
   padding: 30px;
-  width: 80%;
+  width: 70%;
   border-radius: 20px;
 }
 
@@ -878,8 +878,7 @@ h2 {
   background-image: linear-gradient(
       rgba(126, 124, 124, 0.5),
       rgba(166, 167, 123, 0.5)
-    ),
-    url("../resources/servSec1.jpg");
+    );
   background-size: cover;
 }
 
@@ -994,15 +993,14 @@ h2 {
 }
 
 .ServHead {
-  opacity: 1;
-  background-image: url("../resources/ServBanner.jpg");
   padding: 100px;
   text-align: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   justify-content: center;
   display: flex;
+  align-items: center;
+  background-image: url("../resources/ServBanner.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .ServHead div {
@@ -1193,8 +1191,7 @@ hr {
 /* Head Contacto */
 .ContHead {
   /* background-image: url("../resources/ContactBanner.jpg"); */
-  background: linear-gradient(rgba(49, 49, 7, 0.7), rgba(49, 49, 7, 0.7)),
-    url(../resources/ContactBanner.jpg);
+  background-image: url(../resources/ContactBanner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1206,6 +1203,8 @@ hr {
   background-color: #313131bb;
   padding: 30px;
   border-radius: 20px;
+  width: 60%;
+  margin: auto;
 }
 
 .ContHead p {
